@@ -1,0 +1,286 @@
+.menu_1{
+    
+    display: inline-block;
+    width: 100%;
+    
+}
+.ul_li{
+  
+ 
+ 
+   list-style: none;
+   display: inline-block;
+   padding: 0;
+   margin: 0;
+    
+}
+
+.left{
+    float: left;
+
+}
+.ul_li {
+    display: flex;
+}
+
+.right{
+    float: right;
+}
+
+.ul_li li{
+    padding:10px 15px;
+    
+    border-right: solid 1px rgb(80, 78, 76) ;
+  
+}
+.ul_li :last-child{
+border-right: 0;
+}
+.card{
+    float: left;
+}
+.gift{
+    float: left;
+}
+.icon_sms{
+    position: relative;
+}
+.icon_sms .sms{
+    position: absolute;
+    top: -7px;
+    left: 11px;
+    width: 13px;
+   
+    background-color: red;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 10px;
+    color: white;
+   
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 41px;
+    margin-bottom: 29px;
+}
+.logo_in{
+    display: flex;
+    padding-top: 10px;
+    
+}
+.logo_icon{
+    width: 45px;
+    height: 45px;
+   padding-top: 4px;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 10px;
+    background-color: rgb(225, 213, 213);
+   
+}
+.red{
+    color:red;
+}
+.yellou{
+    color: rgb(181, 181, 17);
+}
+.blou{
+    color: blue;
+}
+.logo_2{
+    font-weight: bold;
+    color: rgb(76, 67, 67);
+}
+.btn-outline-success{
+    margin-right: 15px;
+}
+.logo_icon_1{
+    width: 45px;
+    height: 45px;
+   padding-top: 4px;
+    border-radius: 24px;
+    text-align: center;
+    font-size: 25px;
+    margin-right: 10px;
+    background-color: rgb(255, 165, 0);
+    color: white;
+   
+}
+.logo_icon:hover{
+    background-color: rgb(14, 115, 203);
+    color: white;
+    cursor: pointer;
+}
+
+
+.navbar-brand{
+    background-color: rgb(77, 152, 237);
+    border-radius: 25px;
+    width: 100px;
+    color: white;
+    text-align: center;
+    margin-left: -9px;
+}
+.head4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    color: rgb(25, 69, 119);
+    height: 150px;
+}
+.left3{
+   
+    font-size: 40px;
+    font-weight: bold;
+}
+.right3{
+   
+    font-weight: bold;
+}
+
+
+.img_cont{
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_1{
+    width: 210px;
+    height: 335px;
+    justify-content:space-evenly;
+}
+.sweat{
+    font-size: 21px;
+    font-weight: 500;
+    color: #3c3c95;
+}
+.stars{
+    color: yellow;
+}
+.img_1:hover .ul_li{
+    opacity: 1;
+}
+.img_1:hover .stars{
+    display: none;
+}
+.price{
+    display: flex;
+}
+.price div{
+    
+    font-size: 20px;
+    font-weight: 700;
+    color: darkblue;
+    margin-right: 10px;
+}
+.price span{
+    font-size: 15px;
+    color: dimgray;
+}
+.box_1{
+    text-align: center;
+    padding-top: 10px;
+}
+.img_1 .ul_li{
+   opacity: 0;
+   display: flex;
+   justify-content: space-around;
+}
+.box_1{
+    position: relative;
+}
+.desc_img{
+    position: absolute;
+    color: red;
+    top: 0;
+    left: 0;
+    background:#f3f5f1d1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 2s;
+}
+.desc_img:hover{
+    opacity: 1;
+}
+.tooltip_bg{
+    position: absolute;
+    right: -7px;
+    background: rgb(189, 189, 14);
+    top: -13px;
+    padding: 3px 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    z-index: 1;
+    font-weight: bold;
+    color: white;
+}
+.tooltip_bg_bleu{
+    background-color: blue;
+    position: absolute;
+    right: -7px;
+    
+    top: -13px;
+    padding: 3px 6px;
+    font-size: 13px;
+    border-radius: 4px;
+    z-index: 1;
+    font-weight: bold;
+    color: white;
+}
+
+.head_5{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  
+   
+}
+
+.head_6{
+    text-align: left;
+    
+}
+/* .col-2{
+    margin-top: 10px;
+} */
+
+.head_7{
+    margin-top: 30px;
+}
+.litl_img{
+    display: block;
+}
+.foot{
+    display: flex;
+    
+   margin-top: 40px;
+   margin-bottom: 40px;
+    
+    font-size: 25px;
+    color: blue;
+}
+.fa-square-facebook,.fa-square-twitter,.fa-square-instagram{
+    margin-right: 20px;
+}
+
+
+@media(max-width:844px){
+.left{
+    display: none;
+    background-color: aqua;
+}
+}
+
+.tooltip_bg::after {
+    content: '';
+    position: absolute;
+    left: 1px;
+    top: 24px;
+    border: 5px solid transparent;
+    border-top: 10px solid rgb(189, 189, 14);
+}
