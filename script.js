@@ -141,7 +141,7 @@ let addcart = document.getElementsByClassName('logo_icon_1');
 let myFunction = function(evt){
     evt.preventDefault();
     let title = this.parentNode.parentNode.querySelectorAll('.sweat');
-    let price = this.parentNode.parentNode.querySelectorAll('.price');
+    let price = this.parentNode.parentNode.querySelectorAll('.oprice');
     let image = this.parentNode.parentNode.querySelectorAll('.item_img img');
 
     let create_li = document.createElement('li');
@@ -150,28 +150,38 @@ let myFunction = function(evt){
     console.log(title[0].innerText);
     console.log(price[0].innerText);
 
-    create_li.innerHTML = '<div class="item_img">\
-                            <a href ="?search=#">\
-                              <img src="'+image[0].src +'" alt="">\
-                            </a>\
-                        </div>\
-                            <div class="bag_info">\
-                                <p class="info_title">'+title[0].innerText+'</p>\
-                                <div class="info_price">\
-                                   <span>'+price[0].innerText+'</span>\
-                                </div>\
-                            </div>';
-                       
-
-                            
+    create_li.innerHTML =
+                         '<div class="box_11">\
+                                   <img src="'+image[0].src +'" alt="">\
+                          </div>\
+                          <p class="text_bag">'+title[0].innerText+'</p>\
+                          <div class="price">\
+                              <span class="currency">$</span>\
+                              <span class="oprice">'+price[0].innerText+'</span>\
+                          </div>\
+                          <div class="trash">\
+                              <a href="#"><i class="far fa-trash-alt"></i></a>\
+                          </div>';
                             
                            
 
     let block_cart = document.querySelector('.bag_order_dropdown ul')
     block_cart.appendChild(create_li);
     // alert('Товар успешно добавлен в корзину')
-};
+
+    //удаления товаров
+    let click_trash = document.querySelectorAll(".trash");
+    for (let i = 0; i<click_trash.length; i ++){
+    click_trash[i].addEventListener('click', del_func, false);
+   }
+   function del_func(){
+    this.parentNode.remove();
+   
+    };
+}
+   
 
 for (let i = 0; i<addcart.length; i ++){
     addcart[i].addEventListener('click',myFunction);
-};
+}
+
