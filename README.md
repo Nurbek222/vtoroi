@@ -1,2 +1,2 @@
 # vtoroi
-p
+https://nurbek222.github.io/vtoroi/
